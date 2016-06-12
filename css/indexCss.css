@@ -1,0 +1,184 @@
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+html, body
+{
+  /*colors: #ffff99 , #2a2e39 */
+  background: #ffff99;
+  font-family: "Ubuntu", sans-serif;
+  z-index: -1;
+}
+
+.navigation
+{
+  width: 95%;
+  margin: 40px auto;
+}
+
+.logo
+{
+  position: fixed;
+  top: -27px;
+
+}
+.logoText
+{
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  right: 50px;
+  color: black;
+  margin: 5px auto;
+}
+.menu
+{
+  color: black;
+  position: relative;
+  left: 50px;
+  padding-top: 10px;
+  -webkit-transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.fa-bars:hover
+{
+  color: gray;
+  -webkit-transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+}
+.navTitles
+{
+  text-decoration: none;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 110%;
+}
+
+.navTitles a:hover
+{
+  color: white;
+  -webkit-transition: -webkit-transform 0.2s, color 0.5s;
+  -moz-transition: -moz-transform 0.2s, color 0.5s;
+  transition: transform 0.2s, color 0.5s;
+}
+
+.navTitles
+{
+  text-align: center;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.contact
+{
+  padding-bottom: 10px;
+  padding-left: 15px ;
+  padding-right: 15px;
+  border-bottom: 1px solid white;
+}
+
+.current
+{
+    color: white;
+}
+.topBar
+{
+  width: 98%;
+  border: .07em solid white;
+  margin: 20px auto;
+}
+/* -- */
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a:hover .cd-dot {
+  background-color: #e6e6e6;
+}
+
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  top: -8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  box-shadow: 2px 1px 1px black;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  /* colors: #e6e6e6 */
+  color: black;
+  font-size: 0.775rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  /*-webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;*/
+}
+/* -- */
