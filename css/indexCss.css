@@ -4,10 +4,10 @@
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
-html, body
+body
 {
   /*colors: #ffff99 , #2a2e39 */
-  background: #ffff99;
+  background-color: #ffff99;
   font-family: "Ubuntu", sans-serif;
   z-index: -1;
 }
