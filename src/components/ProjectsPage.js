@@ -16,7 +16,7 @@ class Projects extends Component {
           <div className='project-container c1'>
             <div className='proj project-one-container'>
               <h1>Mailbox</h1>
-              <p className='description'>Amazon SES revamping email-marketing.</p>
+              <p className='description'>Amazon SES is amazing for email-marketing.</p>
             </div>
           </div>
           <div className='project-container c2'>
