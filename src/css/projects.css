@@ -1,11 +1,37 @@
 .projectPage-container {
+
   display: flex;
-  
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 }
 
 /* small screens */
 @media (max-width: 732px) {
+  .projectPage-container {
+    margin-top: 50px;
 
+  }
+
+  .projects {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+
+  .project-container {
+    width: 80vw;
+    height: 30vh;
+
+    background-color: black;
+
+    margin-bottom: 20px;
+  }
 }
 
 /* big screens */
