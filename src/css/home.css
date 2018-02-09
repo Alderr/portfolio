@@ -1,0 +1,71 @@
+
+.homePage {
+
+   font-family: 'Jaapokki';
+   display: flex;
+   justify-content: center;
+}
+
+/* small screens */
+@media (max-width: 732px) {
+  .mainQouteWrapper {
+    margin-top: 150px;
+    height: 80vh;
+
+  }
+
+  .mainQoute {
+    font-family: 'Jaapokki';
+    font-size: 5.5vw;
+    padding: 0;
+    margin: 0;
+
+    font-weight: 100;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .firstWord {
+    color: rgb(96, 96, 96);
+    font-size: 1.5em;
+  }
+
+  .qoute {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: -10px 0 -10px 0;
+  }
+
+  .secondWord {
+    margin-top: 5px;
+  }
+
+  .iLetter {
+    color: rgb(12, 231, 111);
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+
+  .awesomeIdeas {
+    color: rgb(255, 38, 0);
+  }
+
+  .excited {
+    color: rgb(235, 255, 0);
+    font-style: italic;
+  }
+
+  .products {
+    color: rgb(6, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
+}
+
+/* big screens */
+@media (min-width: 732px) {
+
+}

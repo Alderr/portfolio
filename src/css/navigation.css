@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile {
+  display: none;
+}
+
+/* small screens */
+@media (max-width: 732px) {
+  .mobile {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+  }
+
+}
+
+
+/* big screens */
+@media (min-width: 732px) {
+
+}
