@@ -3,13 +3,21 @@ import React, { Component } from 'react';
 import Navigation from './Navigation';
 
 import '../css/fonts.css';
+import '../css/about.css';
 
 class About extends Component {
   render() {
     return (
-      <div className=''>
+      <div className='aboutPage-container'>
         <Navigation />
-        <h1> About </h1>
+
+        <div className='contact-info'>
+        <h2>Hello,</h2>
+        <h2>I'm <span id='name'>Vernon Mensah.</span></h2>
+        <h2>Sleepless nights coding galore</h2>
+        </div>
+
+        <h3>Junior Software Developer.</h3>
       </div>
     );
   }

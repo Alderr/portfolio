@@ -8,3 +8,15 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
+@font-face {
+    font-family: 'mvboli';
+    src: url('../fonts/mvboli.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Miniver');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:700');

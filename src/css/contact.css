@@ -1,4 +1,4 @@
-.aboutPage-container {
+.contactPage-container {
 
   display: flex;
   flex-direction: column;
@@ -7,20 +7,12 @@
   justify-content: center;
 }
 
-.contact-info {
-  text-align: center;
-}
-
 /* small screens */
 @media (max-width: 732px) {
 
-  .aboutPage-container {
+  .contactPage-container {
     margin-top: 50px;
 
-  }
-
-  .contact-info {
-    font-family: 'Space Mono', monospace;
   }
 
 }
