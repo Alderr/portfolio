@@ -13,12 +13,15 @@ class Home extends Component {
           <div className="mainQoute">
             <h1 className='firstWord'>honestly, </h1>
             <h1 className='qoute secondWord'><span className='iLetter'>I</span> get way too <span className='excited'>excited</span></h1>
-            <h1 className='qoute'>turning <span className='awesomeIdeas'>awesome ideas</span></h1>
-            <h1 className='qoute'>into amazing <span className='products'>products.</span> </h1>
+            <h1 className='qoute'>turning <span className='awesomeIdeas'>ideas</span> into</h1>
+            <h1 className='qoute'>amazing <span className='products'>products.</span> </h1>
+            <h1 className='qoute flaw'>It's one thing</h1>
+            <h1 className='qoute flaw-second'>I wouldn't change about myself.</h1>
           </div>
-          <Navigation />
         </div>
+        <Navigation />
       </div>
+
     );
   }
 }

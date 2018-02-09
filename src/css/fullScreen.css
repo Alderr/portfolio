@@ -1,5 +1,5 @@
 .fullScreenMenu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -20,8 +20,35 @@
   text-align: center;
 }
 
+.iconWrapper {
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  top: 3%;
+  right: 8%;
+
+}
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* small screens */
+@media (max-width: 732px) {
+
+
+}
+
+
+/* big screens */
+@media (min-width: 732px) {
+
 }

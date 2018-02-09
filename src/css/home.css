@@ -9,7 +9,7 @@
 /* small screens */
 @media (max-width: 732px) {
   .mainQouteWrapper {
-    margin-top: 150px;
+    margin-top: 23vh;
     height: 80vh;
 
   }
@@ -62,6 +62,16 @@
     color: rgb(6, 255, 255);
     text-decoration: underline;
     text-decoration-color: black;
+  }
+
+  .flaw, .flaw-second {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+
+  .flaw-second {
+    margin-top: 10px;
   }
 }
 

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import '../css/fonts.css';
 
-class Projects extends Component {
+class Contact extends Component {
   render() {
     return (
       <div className=''>
-        <h1> Projects </h1>
+        <h1> Contact </h1>
       </div>
     );
   }
 }
 
-export default Projects;
+export default Contact;
