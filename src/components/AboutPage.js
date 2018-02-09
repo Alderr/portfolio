@@ -15,6 +15,7 @@ class About extends Component {
         <h2>Hello,</h2>
         <h2>I'm <span id='name'>Vernon Mensah.</span></h2>
         <h2>Sleepless nights coding galore</h2>
+        <h5>I smile way too much for my own good</h5>
         </div>
 
         <h3>Junior Software Developer.</h3>

@@ -15,6 +15,15 @@
 
   }
 
+  .hire {
+    font-family: 'jaapokki';
+    text-decoration: underline;
+  }
+
+  .gif {
+    width: 100px;
+  }
+
 }
 
 /* big screens */
