@@ -1,3 +1,8 @@
+.projectPage-container {
+  display: flex;
+  
+}
+
 /* small screens */
 @media (max-width: 732px) {
 
