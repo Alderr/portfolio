@@ -9,7 +9,7 @@ import '../css/projects.css';
 function Projects() {
   return (
     <div className="projectPage-container">
-      <div className="title-container"><h1 className="title"> Projects </h1></div>
+      <div className="title-container"><h1 className="title"> [ Projects ] </h1></div>
       <div className="projects">
         <div className="project-container c1">
           <div className="proj project-one-container">

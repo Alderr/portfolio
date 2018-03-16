@@ -9,8 +9,8 @@
 /* small screens */
 @media (max-width: 732px) {
   .mainQouteWrapper {
-    margin-top: 23vh;
-    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 
   }
 
@@ -54,13 +54,11 @@
   }
 
   .excited {
-    color: rgb(235, 255, 0);
-    font-style: italic;
+    color: rgb(242, 255, 0);
   }
 
   .products {
     color: rgb(6, 255, 255);
-    text-decoration: underline;
     text-decoration-color: black;
   }
 
@@ -68,6 +66,9 @@
     text-align: center;
     margin-top: 50px;
     font-size: 5vw;
+    color: rgb(26, 25, 25);
+
+
   }
 
   .flaw-second {

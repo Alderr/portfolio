@@ -22,7 +22,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-        <h1 onClick={this.toggleFullScreenMenu} className='mobile'>[ menu ]</h1>
+        <h1 onClick={this.toggleFullScreenMenu} className='mobile'>menu</h1>
         {this.state.fullScreenMenu ? <FullScreenMenu toggle={this.toggleFullScreenMenu} /> : null}
       </div>
     );

@@ -11,8 +11,17 @@
 @media (max-width: 732px) {
 
   .projectPage-container {
-    margin-top: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
 
+  .title-container {
+    font-size: 4.5vw;
+    width: 100vw;
+
+    /* border-top: 1px solid black; */
+    /* padding-top: 30px; */
+    text-align: center;
   }
 
   img {
@@ -26,7 +35,7 @@
 
   .projects {
 
-    display: flex;
+    display: f flow-rootlex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -35,10 +44,9 @@
   }
 
   .project-container {
-    width: 80vw;
-    height: 30vh;
+    width: 100vw;
+    height: 190px;
 
-    border-radius: 2px;
     margin-bottom: 20px;
   }
 

@@ -1,7 +1,9 @@
 .navigation {
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  */
+
 }
 
 .mobile {
@@ -13,15 +15,21 @@
 
   .navigation {
     position: fixed;
-    bottom: 0;
-    background-color: white;
+    bottom: 7%;
+    right: 7%;
 
-    height: 10vh;
-    width: 100vw;
+    /* background-color: red; */
 
+    height: 50px;
+    width: 100px;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .navigation h1 {
+    color: white;
   }
   .mobile {
     display: block;

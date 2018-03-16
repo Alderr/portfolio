@@ -20,13 +20,10 @@ class FullScreenMenu extends Component {
         <div className="linksWrapper">
           <ul>
             <li className="" onClick={() => this.changeScreen('/')}>
-              <h2>[ home ]</h2>
+              <h2>[ projects ]</h2>
             </li>
             <li className="" onClick={() => this.changeScreen('/about')} onKeyPress={null}>
               <h2>[ who am i ]</h2>
-            </li>
-            <li className="" onClick={() => this.changeScreen('/projects')} onKeyPress={null}>
-              <h2>[ projects ]</h2>
             </li>
             <li className="" onClick={() => this.changeScreen('/contact')} onKeyPress={null}>
               <h2>[ contact ]</h2>
