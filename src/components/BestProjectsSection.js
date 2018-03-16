@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Navigation from './Navigation';
 
@@ -6,7 +6,7 @@ import '../css/fonts.css';
 import '../css/projects.css';
 
 
-function Projects() {
+function BestProjects() {
   return (
     <div className="projectPage-container">
       <div className="title-container"><h1 className="title"> Projects </h1></div>
@@ -30,8 +30,9 @@ function Projects() {
           </div>
         </div>
       </div>
+      <Navigation />
     </div>
   );
 }
 
-export default Projects;
+export default BestProjects;

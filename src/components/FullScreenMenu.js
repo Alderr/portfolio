@@ -1,39 +1,38 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+
 import '../css/fonts.css';
 import '../css/fullScreen.css';
 
-import { Link } from 'react-router-dom';
-
 class FullScreenMenu extends Component {
-  changeScreen() {
-
+  changeScreen(path) {
     this.props.toggle();
-    <Link to='/about' ></Link>
-
+    this.props.history.push(path);
   }
+
   render() {
     return (
-      <div className='fullScreenMenu'>
-        <div onClick={this.props.toggle} className='iconWrapper'>
-          <img src='https://i.imgur.com/UVhfTGs.png' />
+      <div className="fullScreenMenu">
+        <div onClick={this.props.toggle} role="button" tabIndex="0" onKeyPress={null} className="iconWrapper">
+          <img src="https://i.imgur.com/UVhfTGs.png" alt="Exit" />
         </div>
 
-      <div className='linksWrapper'>
-        <ul>
-          <li className='' onClick={null}>
-            <Link to='/' ><h2>[ home ]</h2></Link>
-          </li>
-          <li className='' onClick={null}>
-            <Link to='/about' ><h2>[ who am i ]</h2></Link>
-          </li>
-          <li className='' onClick={null}>
-            <Link to='/projects' ><h2>[ projects ]</h2></Link>
-          </li>
-          <li className='' onClick={null}>
-            <Link to='/contact' ><h2>[ contact ]</h2></Link>
-          </li>
-        </ul>
-      </div>
+        <div className="linksWrapper">
+          <ul>
+            <li className="" onClick={() => this.changeScreen('/')}>
+              <h2>[ home ]</h2>
+            </li>
+            <li className="" onClick={() => this.changeScreen('/about')} onKeyPress={null}>
+              <h2>[ who am i ]</h2>
+            </li>
+            <li className="" onClick={() => this.changeScreen('/projects')} onKeyPress={null}>
+              <h2>[ projects ]</h2>
+            </li>
+            <li className="" onClick={() => this.changeScreen('/contact')} onKeyPress={null}>
+              <h2>[ contact ]</h2>
+            </li>
+          </ul>
+        </div>
 
       </div>
 
@@ -41,4 +40,4 @@ class FullScreenMenu extends Component {
   }
 }
 
-export default FullScreenMenu;
+export default withRouter(FullScreenMenu);

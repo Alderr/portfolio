@@ -9,21 +9,21 @@ import Home from './components/HomePage';
 import About from './components/AboutPage';
 import Projects from './components/ProjectsPage';
 import Contact from './components/ContactPage';
+import Navigation from './components/Navigation';
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div className="App">
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="App">
 
-        <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/contact' component={Contact} />
-        </div>
-      </BrowserRouter>
-    );
-  }
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Navigation />
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
