@@ -45,9 +45,13 @@
 
   .project-container {
     width: 100vw;
-    height: 190px;
 
-    margin-bottom: 20px;
+    margin-bottom: 20p x;
+  }
+
+  .project-image {
+    width: 100vw;
+    height: 100px;
   }
 
   .description {
@@ -55,26 +59,19 @@
     font-size: .8em;
   }
 
-  .c1 {
-    background-color: rgb(251, 250, 93);
-  }
 
   .proj {
     text-align: center;
     padding: 50px 0 50px 0;
   }
 
+  .c1 {
+    background-color: rgb(251, 250, 93);
+  }
+
   .c2 {
     background-color: black;
     color: white;
-  }
-
-  .title-c2 {
-    font-family: 'Josefin Sans', sans-serif;
-  }
-
-  .title-c3 {
-    font-family: 'Miniver', cursive;
   }
 
   .c3 {
