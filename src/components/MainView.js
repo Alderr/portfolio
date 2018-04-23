@@ -18,15 +18,16 @@ class MainView extends Component {
     this.setState({ src });
   }
 
-  toggleGif() {
-    this.setState({ showGif: !this.state.showGif });
+  toggleGif(bool) {
+    console.log(bool);
+    this.setState({ showGif: bool });
   }
 
   render() {
-    return (    
+    return (
       <section>
         <Home />
-        <Projects toggleGif={() => this.toggleGif()} setSrc={() => this.setSrc()} />
+        <Projects toggleGif={bool => this.toggleGif(bool)} setSrc={src => this.setSrc(src)} />
         <HireMePopUp />
         <HoverGif showGif={this.state.showGif} src={this.state.src} />
       </section>

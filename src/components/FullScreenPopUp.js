@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 
 import '../css/fonts.css';
 import '../css/fullScreen.css';
@@ -35,4 +34,4 @@ class FullScreenPopUp extends Component {
   }
 }
 
-export default withRouter(FullScreenPopUp);
+export default (FullScreenPopUp);

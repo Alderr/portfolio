@@ -12,6 +12,10 @@
         width: 50vw;
         height: 40vw;
     }
+
+    .ifMobile {
+        display: none;
+    }
 }
 /* big screens */
 @media (min-width: 732px) {
