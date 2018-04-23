@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Projects from './ProjectsPage';
-
 import '../css/home.css';
 
 function Home() {
@@ -25,7 +23,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Projects />
     </div>
   );
 }

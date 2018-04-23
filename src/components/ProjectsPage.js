@@ -3,7 +3,7 @@ import React from 'react';
 import '../css/projects.css';
 
 
-function Projects() {
+function Projects(props) {
   return (
     <div className="projectPage">
       <div className="title-container">
@@ -19,7 +19,7 @@ function Projects() {
             <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
             <div className="project-description">Affordable email marketing with AWS Simple Email Service.</div>
           </li>
-          <li className="project-container">
+          <li onMouseLeave={() => props.toggleGif()} onMouseEnter={() => props.toggleGif()} className="project-container">
             <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">pokke.</a></h2>
             <div className="project-description">GraphQL + Sendgrid + Twillio in one API.</div>
           </li>

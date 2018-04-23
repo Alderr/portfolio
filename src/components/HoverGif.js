@@ -23,8 +23,8 @@ class HoverGif extends Component {
   render() {
     let gif = null;
 
-    if (this.state.showGif) {
-      gif = (<section><img src={this.state.src} className="hover-gif-box" alt="gif for hovered project" /></section>);
+    if (this.props.showGif) {
+      gif = (<section><img src={this.props.src} className="hover-gif-box" alt="gif for hovered project" /></section>);
     }
 
     return (gif);
