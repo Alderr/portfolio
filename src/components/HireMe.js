@@ -18,7 +18,7 @@ class HireMePopUp extends Component {
 
   render() {
     return (
-      <section className="navigation">
+      <section className="hireme-page">
         <h1 onClick={() => this.togglePopUp()} className="">hire me</h1>
         {this.state.popUp ? <PopUp toggle={() => this.togglePopUp()} /> : null}
       </section>
