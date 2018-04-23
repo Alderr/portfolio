@@ -1,22 +1,60 @@
-
 .homePage {
-
    font-family: 'Jaapokki';
-   display: flex;
-   justify-content: center;
+   margin-left: 20px;
+}
+
+.mainQouteWrapper {
+  display: flex;
+  justify-content: left;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.firstWord {
+  color: rgb(96, 96, 96);
+}
+
+.qoute {
+  font-weight: bolder;
+  margin: -10px 0 -10px 0;
+}
+
+.green {
+  color: rgb(12, 231, 111);
+}
+
+.iLetter {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.awesomeIdeas {
+  color: rgb(255, 38, 0);
+}
+
+.excited {
+  font-weight: 500;
+  color: rgb(242, 255, 0);
+}
+
+.products {
+  color: rgb(6, 255, 255);
+  margin-right: 3px;
 }
 
 /* small screens */
 @media (max-width: 732px) {
-  .mainQouteWrapper {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-
+  .homePage {
+    width: 85vw;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
   }
 
   .mainQoute {
-    font-family: 'Jaapokki';
-    font-size: 5.5vw;
+    font-size: 10vw;
     padding: 0;
     margin: 0;
 
@@ -28,57 +66,25 @@
     margin: 0;
   }
 
-  .firstWord {
-    color: rgb(96, 96, 96);
-    font-size: 1.5em;
-  }
-
-  .qoute {
-    font-size: 1.5em;
-    font-weight: bolder;
-    margin: -10px 0 -10px 0;
-  }
-
-  .secondWord {
-    margin-top: 5px;
-  }
-
-  .iLetter {
-    color: rgb(12, 231, 111);
-    font-size: 1.5em;
-    font-weight: bolder;
-  }
-
-  .awesomeIdeas {
-    color: rgb(255, 38, 0);
-  }
-
-  .excited {
-    color: rgb(242, 255, 0);
-  }
-
-  .products {
-    color: rgb(6, 255, 255);
-    text-decoration-color: black;
-  }
-
-  .flaw, .flaw-second {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 5vw;
-    color: rgb(26, 25, 25);
-
-
-  }
-
-  .flaw-second {
-    margin-top: 10px;
+  .reflection {
+    margin-top: 20px;
   }
 }
 
 /* big screens */
 @media (min-width: 732px) {
-  body {
-    display: none;
+  .homePage {
+    margin-top: 30px;
+    width: 75vw;
+  }
+
+  .mainQoute {
+    font-size: 6vw;
+  }
+
+  .reflection {
+    margin-top: 70px;
+    text-decoration: underline;
+    text-decoration-color: black;
   }
 }

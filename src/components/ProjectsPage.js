@@ -1,36 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Navigation from './Navigation';
-
-import '../css/fonts.css';
 import '../css/projects.css';
 
 
-function Projects() {
+function Projects(props) {
+  function setUpGif(src) {
+    props.setSrc(src);
+    props.toggleGif(true);
+  }
+
+  function turnOffGif() {
+    props.setSrc('');
+    props.toggleGif(false);
+  }
+
   return (
-    <div className="projectPage-container">
-      <div className="title-container"><h1 className="title"> [ Projects ] </h1></div>
-      <div className="projects">
-        <div className="project-container c1">
-          <div className="proj project-one-container">
-            <h1>Mailbox</h1>
-            <p className="description">Amazon SES is amazing for email-marketing.</p>
-          </div>
-        </div>
-        <div className="project-container c2">
-          <div className="proj project-two-container">
-            <h1 className="title-c2">_Krypto</h1>
-            <p className="description">Your cryptocurrency bestfriend.</p>
-          </div>
-        </div>
-        <div className="project-container c3">
-          <div className="proj project-three-container">
-            <h1 className="title-c3">fonts</h1>
-            <p className="description">Fonts, fonts, fonts.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className="projectPage">
+      <section className="title-container">
+        <h1 className="title"> Let&apos;s see some products:</h1>
+      </section>
+      <section className="projects-container">
+        <ul className="projects-list">
+          <li className="project-container">
+            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/AtPa0Mcpllh4Y/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
+            <section className="project-description">Google Docs meets video chat and code.</section>
+          </li>
+          <li className="project-container">
+            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/9NRB16ueUlogE/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
+            <section className="project-description">Affordable email marketing with AWS Simple Email Service.</section>
+          </li>
+          <li className="project-container">
+            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/l0MYwJBnBRQ3Tm5cA/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">pokke.</a></h2>
+            <section className="project-description">GraphQL + Sendgrid + Twillio in one API.</section>
+          </li>
+        </ul>
+      </section>
+    </section>
   );
 }
 

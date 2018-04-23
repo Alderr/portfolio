@@ -1,25 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './css/fonts.css';
 import './App.css';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-
-import Home from './components/HomePage';
-import About from './components/AboutPage';
-import Contact from './components/ContactPage';
-import Navigation from './components/Navigation';
+import MainView from './components/MainView';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Navigation />
-      </div>
-    </BrowserRouter>
+    <section className="App">
+      <MainView />
+    </section>
   );
 }
 
