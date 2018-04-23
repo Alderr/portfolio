@@ -7,6 +7,7 @@ import './App.css';
 
 import Home from './components/HomePage';
 import HireMePopUp from './components/HireMe';
+import HoverGif from './components/HoverGif';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Route exact path="/" component={Home} />
         <HireMePopUp />
+        <HoverGif />
       </div>
     </BrowserRouter>
   );
