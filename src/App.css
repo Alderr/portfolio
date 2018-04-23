@@ -5,12 +5,7 @@ html, body, * {
 }
 
 .App {
+  padding-bottom: 45px;
   display: flex;
   justify-content: center;
-}
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
