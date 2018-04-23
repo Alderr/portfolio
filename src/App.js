@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import './css/fonts.css';
 import './App.css';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Home from './components/HomePage';
 import About from './components/AboutPage';

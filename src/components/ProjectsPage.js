@@ -1,37 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Navigation from './Navigation';
-
-import '../css/fonts.css';
 import '../css/projects.css';
 
 
 function Projects() {
   return (
-    <div className="projectPage-container">
-      <div className="title-container"><h1 className="title"> [ Projects ] </h1></div>
-      <div className="projects">
-        <div className="project-container">
-          <div className="project-image c1"></div>
-          <div className="proj project-one-container">
-            <h1>Mailbox</h1>
-            <p className="description">Amazon SES is amazing for email-marketing.</p>
-          </div>
-        </div>
-        <div className="project-container">
-          <div className="project-image c2"></div>
-          <div className="proj project-two-container">
-            <h1 className="title-c2">_Krypto</h1>
-            <p className="description">Your cryptocurrency bestfriend.</p>
-          </div>
-        </div>
-        <div className="project-container">
-          <div className="project-image c3"></div>
-          <div className="proj project-three-container">
-            <h1 className="title-c3">fonts</h1>
-            <p className="description">Fonts, fonts, fonts.</p>
-          </div>
-        </div>
+    <div className="projectPage">
+      <div className="title-container">
+        <h1 className="title"> Let&apos;s see some products:</h1>
+      </div>
+      <div className="projects-container">
+        <ul className="projects-list">
+          <li className="project-container">
+            <h2 className="project-name">cross-share.</h2>
+            <div className="project-description">Google Docs meets video chat and code.</div>
+          </li>
+          <li className="project-container">
+            <h2 className="project-name">mailbox.</h2>
+            <div className="project-description">Affordable email marketing with AWS Simple Email Service.</div>
+          </li>
+          <li className="project-container">
+            <h2 className="project-name">pokke.</h2>
+            <div className="project-description">GraphQL + Sendgrid + Twillio in one API.</div>
+          </li>
+        </ul>
       </div>
     </div>
   );

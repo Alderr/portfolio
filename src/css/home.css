@@ -1,4 +1,3 @@
-
 .homePage {
    font-family: 'Jaapokki';
    margin-left: 20px;
@@ -23,10 +22,6 @@ h1 {
   margin: -10px 0 -10px 0;
 }
 
-.secondWord {
-  margin-top: 5px;
-}
-
 .green {
   color: rgb(12, 231, 111);
 }
@@ -41,6 +36,7 @@ h1 {
 }
 
 .excited {
+  font-weight: 500;
   color: rgb(242, 255, 0);
 }
 
@@ -54,7 +50,7 @@ h1 {
   .homePage {
     width: 85vw;
     margin-top: 6vh;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
   }
 
   .mainQoute {
@@ -74,17 +70,9 @@ h1 {
     font-size: 1.5em;
   }
 
-  .secondWord {
-    margin-top: 5px;
-  }
-
   .reflection {
     font-size: 5vw;
     margin-top: 40px;
-  }
-
-  .flaw-second {
-    margin-top: 10px;
   }
 }
 
