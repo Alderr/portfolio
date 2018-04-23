@@ -7,9 +7,9 @@ import MainView from './components/MainView';
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <MainView />
-    </div>
+    </section>
   );
 }
 

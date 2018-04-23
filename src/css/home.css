@@ -54,7 +54,7 @@ h1 {
   }
 
   .mainQoute {
-    font-size: 2.5vw;
+    font-size: 10vw;
     padding: 0;
     margin: 0;
 
@@ -66,13 +66,8 @@ h1 {
     margin: 0;
   }
 
-  .firstWord, .qoute {
-    font-size: 1.5em;
-  }
-
   .reflection {
-    font-size: 5vw;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -84,7 +79,7 @@ h1 {
   }
 
   .mainQoute {
-    font-size: 1.8vw;
+    font-size: 6vw;
   }
 
   .reflection {

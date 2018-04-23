@@ -18,10 +18,10 @@ class HireMePopUp extends Component {
 
   render() {
     return (
-      <div className="navigation">
+      <section className="navigation">
         <h1 onClick={() => this.togglePopUp()} className="">hire me</h1>
         {this.state.popUp ? <PopUp toggle={() => this.togglePopUp()} /> : null}
-      </div>
+      </section>
     );
   }
 }
