@@ -1,13 +1,14 @@
-.App {
-  display: flex;
-  justify-content: center;
-}
-
 html, body, * {
   background-color: white;
   font-family: 'Jaapokki';
   box-sizing: border-box;
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
