@@ -1,4 +1,4 @@
-.navigation {
+.hireme-page {
   position: fixed;
   bottom: 7%;
   right: 7%;
@@ -7,10 +7,15 @@
   border: 1px solid black;
 }
 
+.hireme-page h1 {
+  color: black;
+}
+
+
 /* small screens */
 @media (max-width: 732px) {
 
-  .navigation {
+  .hireme-page {
 
     display: flex;
     justify-content: center;
@@ -19,8 +24,8 @@
     border: 1px solid black;
   }
 
-  .navigation h1 {
-    color: black;
+  .hireme-page h1 {
+    font-size: 6vw;
   }
 
   .mobile {
@@ -32,5 +37,7 @@
 
 /* big screens */
 @media (min-width: 732px) {
-
+  .hireme-page h1 {
+    font-size: 2.5vw;
+  }
 }
