@@ -19,7 +19,6 @@ class MainView extends Component {
   }
 
   toggleGif(bool) {
-    console.log(bool);
     this.setState({ showGif: bool });
   }
 
