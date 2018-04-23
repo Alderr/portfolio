@@ -1,4 +1,4 @@
-.fullScreenMenu {
+.fullScreenPopUp {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,16 +8,12 @@
   height: 100vh;
 
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  display: block;
+  align-items: flex-start;
 }
 
-.linksWrapper {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.popup-content {
+  padding-top: 10vw;
 }
 
 .iconWrapper {
@@ -39,6 +35,10 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+.contact-info, .about-info {
+  text-align: center;
 }
 
 /* small screens */
