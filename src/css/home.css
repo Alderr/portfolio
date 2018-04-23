@@ -7,7 +7,6 @@
 .mainQouteWrapper {
   display: flex;
   justify-content: left;
-  
 }
 
 h1 {
@@ -28,8 +27,11 @@ h1 {
   margin-top: 5px;
 }
 
-.iLetter {
+.green {
   color: rgb(12, 231, 111);
+}
+
+.iLetter {
   font-size: 1.5em;
   font-weight: bolder;
 }
@@ -44,23 +46,14 @@ h1 {
 
 .products {
   color: rgb(6, 255, 255);
-  text-decoration-color: black;
-}
-
-.flaw, .flaw-second {
-  text-align: center;
-  margin-top: 50px;
-  color: rgb(26, 25, 25);
-}
-
-.flaw-second {
-  margin-top: 10px;
+  margin-right: 3px;
 }
 
 /* small screens */
 @media (max-width: 732px) {
-  .mainQouteWrapper {
-    margin-top: 10vh;
+  .homePage {
+    width: 85vw;
+    margin-top: 6vh;
     margin-bottom: 10vh;
   }
 
@@ -77,11 +70,7 @@ h1 {
     margin: 0;
   }
 
-  .firstWord {
-    font-size: 1.5em;
-  }
-
-  .qoute {
+  .firstWord, .qoute {
     font-size: 1.5em;
   }
 
@@ -89,30 +78,9 @@ h1 {
     margin-top: 5px;
   }
 
-  .iLetter {
-    color: rgb(12, 231, 111);
-    font-size: 1.5em;
-    font-weight: bolder;
-  }
-
-  .awesomeIdeas {
-    color: rgb(255, 38, 0);
-  }
-
-  .excited {
-    color: rgb(242, 255, 0);
-  }
-
-  .products {
-    color: rgb(6, 255, 255);
-    text-decoration-color: black;
-  }
-
-  .flaw, .flaw-second {
-    text-align: center;
-    margin-top: 50px;
+  .reflection {
     font-size: 5vw;
-    color: rgb(26, 25, 25);
+    margin-top: 40px;
   }
 
   .flaw-second {
@@ -123,7 +91,17 @@ h1 {
 /* big screens */
 @media (min-width: 732px) {
   .homePage {
-    width: 50vw;
-    border: 1px solid black;
+    margin-top: 30px;
+    width: 75vw;
+  }
+
+  .mainQoute {
+    font-size: 1.8vw;
+  }
+
+  .reflection {
+    margin-top: 70px;
+    text-decoration: underline;
+    text-decoration-color: black;
   }
 }
