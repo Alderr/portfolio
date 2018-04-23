@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Navigation from './Navigation';
 
 import '../css/fonts.css';
 import '../css/contact.css';
@@ -9,7 +8,6 @@ class Contact extends Component {
   render() {
     return (
       <div className="contactPage-container">
-        <h1> Contact </h1>
 
         <div className="contact-info">
           <h3 className="hire">Hire me!</h3>

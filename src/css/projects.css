@@ -12,6 +12,14 @@
   font-weight: 100;
 }
 
+.project-name {
+  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
+}
+
+.project-name:hover {
+  color: rgb(6, 255, 255);
+}
+
 .projects-container {
   display: flex;
   justify-content: left;

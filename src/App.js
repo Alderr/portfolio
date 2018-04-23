@@ -6,18 +6,14 @@ import './App.css';
 
 
 import Home from './components/HomePage';
-import About from './components/AboutPage';
-import Contact from './components/ContactPage';
-import Navigation from './components/Navigation';
+import HireMePopUp from './components/HireMe';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Navigation />
+        <HireMePopUp />
       </div>
     </BrowserRouter>
   );
