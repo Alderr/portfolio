@@ -12,16 +12,28 @@ function Projects() {
       <section className="projects-container">
         <ul className="projects-list">
           <li className="project-container">
-            <h2 className="project-name"><a href="https://github.com/RowdyRuffBoysINC/RRB-client" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
-            <section className="project-description">Google Docs meets video chat and code.</section>
+            <div className="project-illustration"><img src="" alt="" /></div>
+            <div className="project-details">
+              <div className="project-number">001</div>
+              <div className="project-description">Google Docs meets video chat and code.</div>
+              <h2 className="project-name"><a href="https://github.com/RowdyRuffBoysINC/RRB-client" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
+            </div>
           </li>
           <li className="project-container">
-            <h2 className="project-name"><a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
-            <section className="project-description">Affordable email marketing with AWS Simple Email Service.</section>
+            <div className="project-illustration"><img src="" alt="" /></div>
+            <div className="project-details">
+              <div className="project-number">002</div>
+              <div className="project-description">Affordable email marketing with AWS Simple Email Service.</div>
+              <h2 className="project-name"><a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
+            </div>
           </li>
           <li className="project-container">
-            <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">pokke.</a></h2>
-            <section className="project-description">GraphQL + Sendgrid + Twillio in one API.</section>
+            <div className="project-illustration"><img src="" alt="" /></div>
+            <div className="project-details">
+              <div className="project-number">003</div>
+              <div className="project-description">GraphQL + Sendgrid + Twillio in one API.</div>
+              <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">pokke.</a></h2>
+            </div>
           </li>
         </ul>
       </section>

@@ -7,22 +7,63 @@
   justify-content: left;
 }
 
-.title {
-  color: rgb(6, 255, 255);
+.title-container h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1.title {
   font-weight: 100;
 }
 
+.projects-container {
+  display: flex;
+  justify-content: left;
+}
+
+.project-container {
+  display: flex;
+  width: 84vw;
+  height: 30vw;
+
+  margin-bottom: 3vw;
+
+  border: 2px solid black;
+}
+
+.project-illustration {
+  flex: 7;
+  border: 1px solid orange;
+  background-color: orange;
+  color: orange;
+}
+
+.project-details {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-number {
+  flex: 2;
+  border: 1px solid black;
+}
+
+.project-description {
+  flex: 4;
+  border: 1px solid black;
+}
+
+.project-name {
+  flex: 2;
+  border: 1px solid black;
+}
 .project-name a {
   transition: all ease-in .3s;
 }
 
 .project-name:hover a {
   color: rgb(6, 255, 255);
-}
-
-.projects-container {
-  display: flex;
-  justify-content: left;
 }
 
 .project-description, .project-name {
@@ -34,7 +75,7 @@
 @media (max-width: 732px) {
 
   .projectPage {
-    margin-top: 45px;
+    margin-top: 5px;
     width: 85vw;
   }
 
@@ -47,11 +88,15 @@
   }
 
   .projects-container {
-    margin-top: 10px;
+    margin-top: 1px;
   }
 
   .project-container {
     margin-bottom: 15px;
+  }
+  
+  .project-details {  
+    padding-left: 10px;
   }
 
   .project-name {
@@ -82,7 +127,7 @@
 @media (min-width: 732px) {
 
   .projectPage {
-    margin-top: 10vw;
+    margin-top: 7vw;
     width: 75vw;
   }
 
@@ -91,8 +136,12 @@
     padding: 0;
   }
 
-  .title {
+  h1.title {
     font-size: 2.5vw;
+  }
+
+  .title-container {
+    margin-bottom: 3vw;
   }
 
   .project-description, .project-name {
@@ -101,18 +150,16 @@
     display: inline-block;
   }
 
+  .project-details {
+    padding-left: 20px;
+  }
+
   .project-name {
     font-size: 5.5vw;
   }
 
   .project-description {
-    margin-left: 10px;
     font-size: 1.8vw;
-  }
-
-  .project-image {
-    display: block;
-    width: 20vw;
   }
 
 }
