@@ -1,90 +1,67 @@
-.homePage {
+.home-page {
    font-family: 'Jaapokki';
    margin-left: 20px;
 }
 
-.mainQouteWrapper {
+.main-qoute-wrapper {
   display: flex;
-  justify-content: left;
+  flex-direction: column;
 }
 
-h1 {
+.home-page h1 {
   padding: 0;
   margin: 0;
+  display: block;
 }
 
-.firstWord {
-  color: rgb(96, 96, 96);
+.blue {
+  color: #1601E0;
 }
 
-.qoute {
-  font-weight: bolder;
-  margin: -10px 0 -10px 0;
-}
-
-.green {
-  color: rgb(12, 231, 111);
-}
-
-.iLetter {
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-
-.awesomeIdeas {
-  color: rgb(255, 38, 0);
-}
-
-.excited {
-  font-weight: 500;
-  color: rgb(242, 255, 0);
-}
-
-.products {
-  color: rgb(6, 255, 255);
-  margin-right: 3px;
+.part-two h1, .part-three h1 {
+  font-weight: 100;
 }
 
 /* small screens */
 @media (max-width: 732px) {
-  .homePage {
+  .home-page {
     width: 85vw;
     margin-top: 6vh;
     margin-bottom: 3vh;
   }
 
-  .mainQoute {
-    font-size: 10vw;
-    padding: 0;
-    margin: 0;
-
-    font-weight: 100;
+  .main-qoute-wrapper {
+    margin-top: 15vw;
+    max-width: 900px; 
   }
 
-  h1 {
-    padding: 0;
-    margin: 0;
+  .part-one, .part-three {
+    margin-bottom: .1vw;
+  } 
+
+  .qoute {
+    font-size: 7vw;
   }
 
-  .reflection {
-    margin-top: 20px;
-  }
 }
 
 /* big screens */
 @media (min-width: 732px) {
-  .homePage {
+  .home-page {
     margin-top: 30px;
     width: 75vw;
   }
 
-  .mainQoute {
-    font-size: 6vw;
+  .main-qoute-wrapper {
+    margin-top: 3vw;
+    max-width: 900px; 
   }
 
-  .reflection {
-    margin-top: 70px;
-    text-decoration: underline;
-    text-decoration-color: black;
+  .part-one, .part-three {
+    margin-bottom: 2vw;
+  } 
+
+  .qoute {
+    font-size: 5.2vw;
   }
 }
