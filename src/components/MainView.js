@@ -14,21 +14,12 @@ class MainView extends Component {
     };
   }
 
-  setSrc(src) {
-    this.setState({ src });
-  }
-
-  toggleGif(bool) {
-    this.setState({ showGif: bool });
-  }
-
   render() {
     return (
       <section>
         <Home />
-        <Projects toggleGif={bool => this.toggleGif(bool)} setSrc={src => this.setSrc(src)} />
+        <Projects />
         <HireMePopUp />
-        <HoverGif showGif={this.state.showGif} src={this.state.src} />
       </section>
     );
   }
