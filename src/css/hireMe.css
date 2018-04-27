@@ -1,43 +1,44 @@
-.hireme-page {
+.hireme-button {
   position: fixed;
   bottom: 7%;
   right: 7%;
 
   padding: 0 10px 0 10px;
-  border: 1px solid black;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  /* border-right: 2px solid black; */
 }
 
-.hireme-page h1 {
-  color: black;
+.hireme-button-container {
+  background-color: transparent;
 }
 
+.hireme-button h1 {
+  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: transparent;
+}
 
 /* small screens */
 @media (max-width: 732px) {
-
-  .hireme-page {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid black;
+  .hireme-button h1 {
+    font-size: 7vw;
   }
 
-  .hireme-page h1 {
-    font-size: 6vw;
+  .hireme-button-container {
+    padding-top: 5px;
   }
-
   .mobile {
     display: block;
   }
-
 }
 
 
 /* big screens */
 @media (min-width: 732px) {
-  .hireme-page h1 {
-    font-size: 2.5vw;
+  .hireme-button h1 {
+    font-size: 32px;
   }
 }

@@ -26,7 +26,7 @@
 @media (max-width: 732px) {
   .home-page {
     width: 85vw;
-    margin-top: 6vh;
+    margin-top: 8vh;
     margin-bottom: 3vh;
   }
 
@@ -40,7 +40,7 @@
   } 
 
   .qoute {
-    font-size: 7vw;
+    font-size: 7.9vw;
   }
 
 }
@@ -48,7 +48,7 @@
 /* big screens */
 @media (min-width: 732px) {
   .home-page {
-    margin-top: 30px;
+    margin-top: 130px;
     width: 75vw;
   }
 
