@@ -12,11 +12,11 @@ function Projects() {
       <section className="projects-container">
         <ul className="projects-list">
           <li className="project-container">
-            <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
+            <h2 className="project-name"><a href="https://github.com/RowdyRuffBoysINC/RRB-client" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
             <section className="project-description">Google Docs meets video chat and code.</section>
           </li>
           <li className="project-container">
-            <h2 className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
+            <h2 className="project-name"><a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
             <section className="project-description">Affordable email marketing with AWS Simple Email Service.</section>
           </li>
           <li className="project-container">

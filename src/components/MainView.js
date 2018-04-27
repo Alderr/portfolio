@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Home from './HomePage';
 import Projects from './ProjectsPage';
 import HireMePopUp from './HireMe';
-import HoverGif from './HoverGif';
 
 class MainView extends Component {
   constructor(props) {
