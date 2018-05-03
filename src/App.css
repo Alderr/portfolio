@@ -4,8 +4,27 @@ html, body, * {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .App {
   padding-bottom: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+
+}
+
+@media (min-width: 720px) {
+  .App {
+    padding-left: 7vw;
+  }
 }

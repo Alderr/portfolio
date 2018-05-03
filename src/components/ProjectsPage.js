@@ -1,38 +1,47 @@
 import React from 'react';
 
+import crossShareGif from '../img/ezgif.com-gif-maker.gif';
 import '../css/projects.css';
 
 
-function Projects(props) {
-  function setUpGif(src) {
-    props.setSrc(src);
-    props.toggleGif(true);
-  }
-
-  function turnOffGif() {
-    props.setSrc('');
-    props.toggleGif(false);
-  }
-
+function Projects() {
   return (
-    <section className="projectPage">
+    <section className="project-page">
       <section className="title-container">
         <h1 className="title"> Let&apos;s see some products:</h1>
       </section>
       <section className="projects-container">
         <ul className="projects-list">
-          <li className="project-container">
-            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/AtPa0Mcpllh4Y/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">cross-share.</a></h2>
-            <section className="project-description">Google Docs meets video chat and code.</section>
-          </li>
-          <li className="project-container">
-            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/9NRB16ueUlogE/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">mailbox.</a></h2>
-            <section className="project-description">Affordable email marketing with AWS Simple Email Service.</section>
-          </li>
-          <li className="project-container">
-            <h2 onMouseEnter={() => setUpGif('https://media.giphy.com/media/l0MYwJBnBRQ3Tm5cA/giphy.gif')} onMouseLeave={turnOffGif} className="project-name"><a href="https://github.com/Alderr/Pokke" target="_blank" rel="noopener noreferrer">pokke.</a></h2>
-            <section className="project-description">GraphQL + Sendgrid + Twillio in one API.</section>
-          </li>
+          <a href="https://github.com/RowdyRuffBoysINC/RRB-client" target="_blank" rel="noopener noreferrer">
+            <li className="project-container">
+              <div className="project-illustration"><img src={crossShareGif} alt="" /></div>
+              <div className="project-details">
+                <div className="project-number non-mobile blue"><h2>001</h2></div>
+                <div className="project-description"><h2>A real-time, collaborative application that resembles Google Docs featuring a webcam, chat, code/document editing, and a whiteboard.</h2></div>
+                <div className="project-name"><h2><span className="blue">cross-share</span>.</h2></div>
+              </div>
+            </li>
+          </a>
+          <a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">
+            <li className="project-container">
+              <div className="project-illustration"><img src="" alt="" /></div>
+              <div className="project-details">
+                <div className="project-number non-mobile blue"><h2>002</h2></div>
+                <div className="project-description"><h2>An email marketing tool that’s more affordable than Mailchimp with the power of AWS!</h2></div>
+                <div className="project-name"><h2><span className="blue">mailbox</span>.</h2></div>
+              </div>
+            </li>
+          </a>
+          <a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">
+            <li className="project-container">
+              <div className="project-illustration"><img src="" alt="" /></div>
+              <div className="project-details">
+                <div className="project-number non-mobile blue"><h2>003</h2></div>
+                <div className="project-description"><h2>Send emails and text messages; a combination of Twilio and Sendgrid, as reminders in any app through an API!</h2></div>
+                <div className="project-name"><h2><span className="blue">pokke</span>.</h2></div>
+              </div>
+            </li>
+          </a>
         </ul>
       </section>
     </section>
