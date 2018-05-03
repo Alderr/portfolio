@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import '../css/hireMe.css';
 
@@ -6,7 +6,7 @@ function HireMePopUp(props) {
   return (
     <section className="hireme-button">
       <div className="hireme-button-container">
-        <h1 onClick={() => props.history.push('/me')} className="">hire me</h1>
+        <h1 onClick={() => props.history.push('/me')} >hire me</h1>
       </div>
     </section>
   );

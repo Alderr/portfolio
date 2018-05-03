@@ -1,36 +1,47 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import '../css/fullScreen.css';
-import gitLogo from '../img/black.png';
-import gmailLogo from '../img/icons8-gmail-50.png';
-import linkedinLogo from '../img/icons8-linkedin-48.png';
+// import gitLogo from '../img/black.png';
+// import gmailLogo from '../img/icons8-gmail-50.png';
+// import linkedinLogo from '../img/icons8-linkedin-48.png';
+// import homeLogo from '../img/house.png';
 
 function FullScreenPopUp(props) {
   return (
-    <section className="fullscreen-popup">
-      <section className="popup-content">
-        <section className="iconWrapper" onClick={props.toggle} role="button" tabIndex="0" onKeyPress={null} >
-          <img src="https://i.imgur.com/UVhfTGs.png" alt="Exit" />
-        </section>
+    <section className="me-page">
+      <div className="home-button-wrapper" onClick={() => props.history.push('/')} role="button" tabIndex="0" onKeyPress={null} >
+        <h1> home </h1>
+      </div>
+      <section className="me-content">
         <section className="about-info">
-          <h1>Human<span>.</span></h1>
-          <h1>Avid reader.</h1>
-          <h1>Smiles a lot.</h1>
-          <h1>Loyal.</h1>
-          <h1>Enjoys hackathons.</h1>
-          <h1>Adaptive.</h1>
-          <h1>Self-aware.</h1>
+          <h1>Human<span className="dot">. </span></h1>
+          <h1>Avid reader<span className="dot">.</span></h1>
+          <h1>Smiles a lot<span className="dot">.</span></h1>
+          <h1>Loyal<span className="dot">.</span></h1>
+          <h1>Enjoys hackathons<span className="dot">.</span></h1>
+          <h1>Adaptive<span className="dot">.</span></h1>
+          <h1>Self-aware<span className="dot">.</span></h1>
+          {/*
+          <h1>
+            Human<span className="dot">. </span>
+            Avid reader<span className="dot">.</span>
+            Smiles a lot<span className="dot">.</span>
+            Loyal<span className="dot">.</span>
+          </h1>
+          <h1>
+            Enjoys hackathons<span className="dot">.</span>
+            Adaptive<span className="dot">.</span>
+          </h1>
+          <h1>Self-aware<span className="dot">.</span></h1> */}
         </section>
         <br />
         <section className="contact-info">
           <h2 className="hire">Hire me!</h2>
-          {/* <a href="https://github.com/Alderr" target="_blank" rel="noopener noreferrer"><img src={gitLogo} alt="my github" /></a>
-          <a href="mailto:vernonmensah@gmail.com?Subject=Hello%20again" target="_blank" rel="noopener noreferrer"><img src={gmailLogo} alt="my gmail" /></a>
-          <a href="https://linkedin.com/in/vernonmensah" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="my linkedin" /></a> */}
           <div className="explicit-links">
-            <h3>vernonmensah@gmail.com</h3>
-            <h3>linkedin.com/in/vernonmensah</h3>
-            <h3>github.com/alderr</h3>
+            <h3><span className="connect">Email me at </span><span className="link">vernonmensah@gmail.com.</span></h3>
+            <h3><span className="connect">Connect with me on </span><span className="link"> linkedin.com/in/vernonmensah.</span></h3>
+            <h3><span className="connect">Code with me at </span><span className="link"> github.com/alderr.</span></h3>
           </div>
         </section>
       </section>
@@ -39,4 +50,4 @@ function FullScreenPopUp(props) {
 }
 
 
-export default (FullScreenPopUp);
+export default withRouter(FullScreenPopUp);

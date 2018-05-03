@@ -26,8 +26,9 @@
 @media (max-width: 732px) {
   .home-page {
     width: 85vw;
+    height: auto;
     margin-top: 8vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
   }
 
   .main-qoute-wrapper {
@@ -48,13 +49,17 @@
 /* big screens */
 @media (min-width: 732px) {
   .home-page {
-    margin-top: 130px;
     width: 75vw;
+    height: 100vh;
   }
 
   .main-qoute-wrapper {
-    margin-top: 3vw;
-    max-width: 900px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-59%,-50%);
+
+    width: 70%;
   }
 
   .part-one, .part-three {
@@ -62,6 +67,6 @@
   } 
 
   .qoute {
-    font-size: 5.2vw;
+    font-size: 5vw;
   }
 }
