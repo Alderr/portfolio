@@ -1,4 +1,4 @@
-.projectPage {
+.project-page {
   font-family: 'Jaapokki';
   margin-left: 20px;
   display: flex;
@@ -7,9 +7,80 @@
   justify-content: left;
 }
 
-.title {
-  color: rgb(6, 255, 255);
+.project-page h1,h2,h3 {
+  margin: 0;
+}
+
+.title-container h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1.title {
   font-weight: 100;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: left;
+}
+
+.project-container {
+  display: flex;
+}
+
+.project-illustration {
+  flex: 7;
+  display: flex;
+  background-color:   rgb(23, 0, 87);
+  color: orange;
+}
+
+.project-illustration img {
+  width: 100%;
+  color: blue;
+  background-color: blue;
+  /* border: 2px solid blue; */
+}
+
+.project-details {
+  flex: 3;
+  display: flex;
+}
+
+.project-number {
+  flex: 2;
+
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.project-number h2 {
+  padding: 0;
+  margin: 0;
+
+  background-color: transparent;
+}
+
+.project-description {
+  flex: 4;
+
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.project-description h2 {
+  font-weight: 100;
+  color: black;
+}
+
+.project-name {
+  flex: 3;
+
+  display: flex;
+  /* border: 1px solid black; */
 }
 
 .project-name a {
@@ -20,11 +91,6 @@
   color: rgb(6, 255, 255);
 }
 
-.projects-container {
-  display: flex;
-  justify-content: left;
-}
-
 .project-description, .project-name {
   margin: 0;
   padding: 0;
@@ -33,9 +99,13 @@
 /* small screens */
 @media (max-width: 732px) {
 
-  .projectPage {
-    margin-top: 45px;
-    width: 85vw;
+  .non-mobile {
+    display: none;
+  }
+  
+  .project-page {
+    margin-top: 5px;
+    width: 90vw;
   }
 
   .title {
@@ -46,73 +116,88 @@
     font-size: 6vw;
   }
 
-  .projects-container {
-    margin-top: 10px;
-  }
-
   .project-container {
-    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    margin-bottom: 10vw;
   }
 
-  .project-name {
-    font-size: 8vw;
+  .project-illustration {
+    width: 100%;
+    height: 40vw;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .project-description {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
-  img {
-    transition: all 2s cubic-bezier(.23,1,.32,1);
-    transform: scale(1);
+  .project-name {
+    font-size: 6vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
-
-  img:hover {
-    transform: scale(1.1);
-  }
-
-  .project-image {
-    display: block;
-    width: 20vw;
-  }
-
 }
 
 /* big screens */
 @media (min-width: 732px) {
 
-  .projectPage {
-    margin-top: 10vw;
+  .project-page {
+    margin-top: 7vw;
     width: 75vw;
   }
 
   .projects-container {
     margin: 0;
     padding: 0;
+
   }
 
-  .title {
+  .project-container {
+    margin-bottom: 4vw;
+
+    width: 84vw;
+    height: 30vw;
+  }
+
+  h1.title {
     font-size: 2.5vw;
   }
 
-  .project-description, .project-name {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+  .title-container {
+    margin-bottom: 3vw;
+  }
+
+  .project-details {
+    padding-left: 20px;
+    flex-direction: column;
+  }
+
+  div.project-name h2 {
+    font-size: 4vw;
   }
 
   .project-name {
-    font-size: 5.5vw;
+    align-items: center;
   }
-
+  
   .project-description {
-    margin-left: 10px;
-    font-size: 1.8vw;
+    padding-right: 30px;
   }
 
-  .project-image {
-    display: block;
-    width: 20vw;
+  .project-description h2 {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+
+  .project-number h2 {
+    font-size: 2.5vw;
   }
 
 }

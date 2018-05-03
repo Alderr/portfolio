@@ -1,29 +1,16 @@
-import React, { Component } from 'react';
-import PopUp from './FullScreenPopUp';
-
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 import '../css/hireMe.css';
 
-class HireMePopUp extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      popUp: false,
-    };
-  }
-
-  togglePopUp() {
-    this.setState({ popUp: !this.state.popUp });
-  }
-
-  render() {
-    return (
-      <section className="hireme-page">
-        <h1 onClick={() => this.togglePopUp()} className="">hire me</h1>
-        {this.state.popUp ? <PopUp toggle={() => this.togglePopUp()} /> : null}
-      </section>
-    );
-  }
+function HireMePopUp(props) {
+  return (
+    <section className="hireme-button">
+      <div className="hireme-button-container">
+        <h1 onClick={() => props.history.push('/me')} >hire me</h1>
+      </div>
+    </section>
+  );
 }
 
-export default HireMePopUp;
+
+export default withRouter(HireMePopUp);
