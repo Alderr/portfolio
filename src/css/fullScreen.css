@@ -10,10 +10,8 @@
   background-color: white;
   display: block;
   align-items: flex-start;
-}
 
-.popup-content {
-  padding-top: 10vw;
+  overflow-y: scroll;  
 }
 
 .iconWrapper {
@@ -26,29 +24,48 @@
 
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .contact-info, .about-info {
-  text-align: center;
+  text-align: left;
 }
 
 /* small screens */
 @media (max-width: 732px) {
+  .popup-content {
+    padding-top: 15vw;
+  }
 
+  .contact-info, .about-info {
+    padding-left: 10vw;
+  }
 
+  .about-info h1 {
+    color: red;
+    font-size: 4vw;
+  }
 }
 
 
 /* big screens */
 @media (min-width: 732px) {
+  .iconWrapper {
+    margin-top: 1vw;
+  }
+  .popup-content {
+    padding-top: 2vw;
+    margin-bottom: 5vw;
+  }
 
+  .contact-info, .about-info {
+    padding-left: 10vw;
+  }
+
+  .about-info h1 {
+    color: red;
+    font-size: 4vw;
+  }
+
+  .contact-info {
+    /* font-size: 2.5vw; */
+    margin-bottom: 5vw;
+  }
 }

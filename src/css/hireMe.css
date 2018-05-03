@@ -23,7 +23,7 @@
 
 /* small screens */
 @media (max-width: 732px) {
-  .hireme-button h1 {
+  .hireme-button-container h1 {
     font-size: 7vw;
   }
 
@@ -38,7 +38,7 @@
 
 /* big screens */
 @media (min-width: 732px) {
-  .hireme-button h1 {
+  .hireme-button-container h1 {
     font-size: 32px;
   }
 }
