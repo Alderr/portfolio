@@ -1,5 +1,6 @@
 import React from 'react';
 
+import crossShareGif from '../img/ezgif.com-gif-maker.gif';
 import '../css/projects.css';
 
 
@@ -13,7 +14,7 @@ function Projects() {
         <ul className="projects-list">
           <a href="https://github.com/RowdyRuffBoysINC/RRB-client" target="_blank" rel="noopener noreferrer">
             <li className="project-container">
-              <div className="project-illustration"><img src="" alt="" /></div>
+              <div className="project-illustration"><img src={crossShareGif} alt="" /></div>
               <div className="project-details">
                 <div className="project-number non-mobile blue"><h2>001</h2></div>
                 <div className="project-description"><h2>A real-time, collaborative application that resembles Google Docs featuring a webcam, chat, code/document editing, and a whiteboard.</h2></div>

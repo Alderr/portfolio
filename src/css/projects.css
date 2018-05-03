@@ -31,8 +31,16 @@ h1.title {
 
 .project-illustration {
   flex: 7;
+  display: flex;
   background-color:   rgb(23, 0, 87);
   color: orange;
+}
+
+.project-illustration img {
+  width: 100%;
+  color: blue;
+  background-color: blue;
+  /* border: 2px solid blue; */
 }
 
 .project-details {
