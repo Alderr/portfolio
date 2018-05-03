@@ -112,7 +112,7 @@ h1.title {
 
     display: flex;
     flex-direction: column;
-
+    width: 82vw;
     margin-bottom: 10vw;
   }
 
