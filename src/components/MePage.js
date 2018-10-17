@@ -2,10 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 import '../css/fullScreen.css';
-// import gitLogo from '../img/black.png';
-// import gmailLogo from '../img/icons8-gmail-50.png';
-// import linkedinLogo from '../img/icons8-linkedin-48.png';
-// import homeLogo from '../img/house.png';
 
 function FullScreenPopUp(props) {
   return (
@@ -22,18 +18,6 @@ function FullScreenPopUp(props) {
           <h1>Enjoys hackathons<span className="dot">.</span></h1>
           <h1>Adaptive<span className="dot">.</span></h1>
           <h1>Self-aware<span className="dot">.</span></h1>
-          {/*
-          <h1>
-            Human<span className="dot">. </span>
-            Avid reader<span className="dot">.</span>
-            Smiles a lot<span className="dot">.</span>
-            Loyal<span className="dot">.</span>
-          </h1>
-          <h1>
-            Enjoys hackathons<span className="dot">.</span>
-            Adaptive<span className="dot">.</span>
-          </h1>
-          <h1>Self-aware<span className="dot">.</span></h1> */}
         </section>
         <br />
         <section className="contact-info">
@@ -48,6 +32,5 @@ function FullScreenPopUp(props) {
     </section>
   );
 }
-
 
 export default withRouter(FullScreenPopUp);
