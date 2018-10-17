@@ -1,0 +1,22 @@
+language: node_js
+node_js: node
+
+script:
+  - npm test
+  - npm run lint
+  - npm run build
+
+cache:
+  directories:
+    - node_modules
+
+before_deploy:
+  - npm install netlify-cli -g
+  - npm run build
+
+deploy:
+  provider: script
+  script: netlify deploy -s $SITE_ID --auth $NETLIFY_ACCESS_TOKEN -p --dir ./build
+  skip_cleanup: true
+  on:
+    branch: master
