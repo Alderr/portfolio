@@ -18,7 +18,12 @@ function Projects() {
               <div className="project-details">
                 <div className="project-number non-mobile blue"><h2>001</h2></div>
                 <div className="project-description"><h2>A real-time, collaborative application that resembles Google Docs featuring a webcam, chat, code/document editing, and a whiteboard.</h2></div>
-                <div className="project-name"><h2><span className="blue">cross-share</span>.</h2></div>
+                <div className="project-name">
+                  <h2>
+                    <span className="blue">cross-share</span>
+.
+                  </h2>
+                </div>
               </div>
             </li>
           </a>
@@ -28,7 +33,12 @@ function Projects() {
               <div className="project-details">
                 <div className="project-number non-mobile blue"><h2>002</h2></div>
                 <div className="project-description"><h2>An email marketing tool that’s more affordable than Mailchimp with the power of AWS!</h2></div>
-                <div className="project-name"><h2><span className="blue">mailbox</span>.</h2></div>
+                <div className="project-name">
+                  <h2>
+                    <span className="blue">mailbox</span>
+.
+                  </h2>
+                </div>
               </div>
             </li>
           </a>
@@ -38,7 +48,12 @@ function Projects() {
               <div className="project-details">
                 <div className="project-number non-mobile blue"><h2>003</h2></div>
                 <div className="project-description"><h2>Send emails and text messages; a combination of Twilio and Sendgrid, as reminders in any app through an API!</h2></div>
-                <div className="project-name"><h2><span className="blue">pokke</span>.</h2></div>
+                <div className="project-name">
+                  <h2>
+                    <span className="blue">pokke</span>
+.
+                  </h2>
+                </div>
               </div>
             </li>
           </a>
