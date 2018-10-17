@@ -42,21 +42,18 @@ function Projects() {
               </div>
             </li>
           </a>
-          <a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://github.com/Alderr/Mailbox" target="_blank" rel="noopener noreferrer">
             <li className="project-container">
               <div className="project-illustration"><img src="" alt="" /></div>
               <div className="project-details">
                 <div className="project-number non-mobile blue"><h2>003</h2></div>
                 <div className="project-description"><h2>Send emails and text messages; a combination of Twilio and Sendgrid, as reminders in any app through an API!</h2></div>
                 <div className="project-name">
-                  <h2>
-                    <span className="blue">pokke</span>
-.
-                  </h2>
+                  <h2><span className="blue">pokke</span>.</h2>
                 </div>
               </div>
             </li>
-          </a>
+          </a> */}
         </ul>
       </section>
     </section>
